@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrijana Sharma - Portfolio</title>
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            background-color: #1c1c24;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1c1c24;
+            border-bottom: 2px solid #ffee00;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 24px;
+            color: #ffee00;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffee00;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffee00;
+        }
+
+        h4 {
+            font-family: 'Libre Baskerville', serif;
+            font-style: italic;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #888888;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        button {
+            background-color: #ffee00;
+            color: #1c1c24;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            background-color: #1c1c24;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            color: #888888;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shrijana Sharma</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <h4>Running "Social Savvy" | Digital Marketing Course from Hansraj College</h4>
+            <p>Shrijana Sharma is the founder of "Social Savvy", a marketing agency specializing in digital strategies. She is currently pursuing a digital marketing course at Hansraj College. Previously, she managed a creative team and handled approximately 10 foreign clients as the head graphic designer at Apka Soft Tech.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <h4>Offering expert solutions in:</h4>
+            <ul>
+                <li>Digital Marketing Strategy</li>
+                <li>Social Media Management</li>
+                <li>Graphic Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <h4>Highlighting past projects</h4>
+            <!-- Portfolio items can be added here -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <h4>Get in touch</h4>
+            <button id="contactBtn">Show Contact Info</button>
+            <div id="contactInfo" class="hidden">
+                <p><strong>Mobile No.:</strong> +91 99712 39669</p>
+                <p><strong>Email:</strong> <a href="mailto:amitojesinghbakshi7@gmail.com">shirusharma0309@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shrijana Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle visibility of contact information
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            document.getElementById('contactInfo').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
